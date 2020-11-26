@@ -147,6 +147,14 @@ img {
 
 .przedmiot3 {}
 
+/* FOOTER */
+
+._footer{
+    width: 100%;
+    height: 200px;
+    background: #000;
+}
+
 
 /* PARALLAX */
 
