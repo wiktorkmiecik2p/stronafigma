@@ -12,96 +12,54 @@
     list-style: none;
 }
 
-a{
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-}
-
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background: #fff;
+    color: #000;
 }
 
-.cwiartka {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    background-color: #000;
-    width: 170px;
-    height: 170px;
-    clip-path: polygon(12% 100%, 34% 100%, 34% 65%, 53% 38%, 100% 36%, 100% 17%, 51% 15%, 13% 63%);
-}
+.container {}
 
-.black {
-    top: 1%;
-    position: sticky;
-    background-color: #000;
-    color: #fff;
-    margin: auto;
-    width: 94%;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+/* HEADER */
 
-.black>ul {
-    width: 15%;
-    display: flex;
-    justify-content: space-around;
-}
-
-li>a {
-    text-decoration: none;
-    font-size: 1.2em;
-    color: #fff;
-}
-
-.black>h1 {
-    padding: 1%;
-    font-size: 1.2em;
-    width: 70%;
-    font-weight: 550;
-    font-size: 1.8em;
-    text-align: l
-}
-
-.main{
-    width: 88%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-left: 0%;
-}
-.article1 > h2 {
-    font-size: 1.7em;
-    font-weight: 700;
-    margin-bottom: 1%;
-}
-
-.article1{
+._header {
     width: 100%;
+    height: 300px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 26% 1fr;
+    grid-template-rows: auto;
+    align-items: center;
 }
 
-.article1 > p {
-    margin-left: 1%;
-    width: 60%;
-    letter-spacing: .07em;
+._header>._h1 {
+    grid-column: 2/3;
 }
 
-footer{
-    text-align: center;
-    font-weight: 600;
-    position: fixed;
-    bottom: 0;
-    right: auto;
-    left: auto;
-    padding-bottom: 1.5%;
-    letter-spacing: .1em;
-    width: 80%;
-    margin-right: 10%;
-    height: 1%;
+._header>._h1>h1 {
+    font-size: 3.2em;
+}
+
+._header>._h1>h1>span {
+    font-size: 1.3em;
+    letter-spacing: .05em;
+}
+
+._header>._h1>p {
+    font-size: 1.3em;
+}
+
+._main {
+    width: 100%;
+    height: 550px;
     background-color: #fff;
 }
+
+
+
+/* PARALLAX */
+
+.parallax {
+    min-height: 500px;
+    background: transparent;
+}
+
