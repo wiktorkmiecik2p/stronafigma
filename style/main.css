@@ -4,6 +4,7 @@
     display: none;
 }
 
+
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +16,7 @@
 body {
     background: #fff;
     color: #000;
+    user-select: none; 
 }
 
 a {
