@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 ::-webkit-scrollbar {
-    display: none;
+    width: 6.5px;
+    background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+    width: 6.5px;
+    background: rgb(148, 148, 148);
 }
 
 
@@ -47,6 +53,7 @@ a {
     font-size: 2.6em;
     font-weight: 900;
     padding-left: 9%;
+    color: rgb(102, 51, 0); 
 }
 
 ._nav > ul{
@@ -261,7 +268,7 @@ a {
 footer{
     width: 100%;
     height: 40px;
-    background: rgb(237,237,237); 
+    background: rgb(255,255,255); 
     font-size: 1.25em;
     text-align: center;
     padding-top: 10px;
@@ -279,6 +286,12 @@ footer p span{
     min-height: 500px;
     background: transparent;
 }
+
+.parallax1 {
+    min-height: 400px;
+    background: transparent;
+}
+
 
 /* KONTAKT */
 
