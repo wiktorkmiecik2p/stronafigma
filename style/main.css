@@ -244,8 +244,34 @@ img {
 
 ._footer {
     width: 100%;
-    height: 200px;
+    height: 250px;
     background: #fff;
+    display: grid;
+    grid-template-columns: 20% 20% 1fr 5%;
+    grid-template-rows: 8% 1fr;
+}
+
+._footer > .kontakt1 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+._footer > .kontakt2 {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+
+
+._footer a:hover{
+    color: rgba(0, 0, 0, .7);
+    transition: all 0.2s ease 0s;
+}
+
+
+footer{
+    width: 100%;
+    background: rgb(237,237,237); 
 }
 
 
