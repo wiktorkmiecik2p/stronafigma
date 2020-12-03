@@ -2,7 +2,7 @@
 
 ::-webkit-scrollbar {
     width: 6.5px;
-    background: transparent; 
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -22,7 +22,7 @@
 body {
     background: #fff;
     color: #000;
-    user-select: none; 
+    user-select: none;
 }
 
 a {
@@ -32,7 +32,7 @@ a {
 
 /* NAV */
 
-._nav{
+._nav {
     padding-top: .5%;
     padding-bottom: .5%;
     width: 100%;
@@ -49,20 +49,20 @@ a {
 
 }
 
-._nav > a > p{
+._nav>a>p {
     font-size: 2.6em;
     font-weight: 900;
     padding-left: 9%;
-    color: rgb(102, 51, 0); 
+    color: rgb(102, 51, 0);
 }
 
-._nav > ul{
+._nav>ul {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: auto;
 }
 
-._nav > ul > li{
+._nav>ul>li {
     font-size: 1.2em;
     margin: auto;
     transition: .25s;
@@ -70,21 +70,23 @@ a {
     font-weight: 600;
 }
 
-._nav > ul > li:after{
+._nav>ul>li:after {
     content: '';
     position: absolute;
     width: 100%;
     height: 14%;
     bottom: 0;
     left: 0;
-    background-color: #000;
+    background-color: rgb(102, 51, 0);
     transition: .25s;
-    transform: scaleX(0);;
+    transform: scaleX(0);
+    ;
 }
 
-._nav > ul > li:hover:after{
+._nav>ul>li:hover:after {
     width: 100%;
-    transform: scaleX(1);;
+    transform: scaleX(1);
+    ;
 }
 
 /* ._nav > ul > li:hover{
@@ -119,7 +121,7 @@ a {
 ._header>._h1>h1>span {
     font-size: 1.3em;
     letter-spacing: .05em;
-    color: rgb(102, 51, 0); 
+    color: rgb(102, 51, 0);
 }
 
 ._header>._h1>p {
@@ -170,10 +172,10 @@ a {
 }
 
 ._main>ul>li:hover {
-    font-size: 1.2em;    
+    font-size: 1.2em;
 }
 
-._main>.natura {    
+._main>.natura {
     margin-top: 3%;
     font-weight: 600;
     padding-top: 5%;
@@ -211,19 +213,20 @@ a {
     display: grid;
     grid-template-columns: 27% 27% 27%;
     grid-template-rows: 420px 420px;
-    grid-template-areas: 
-    ".przedmiot1 .przedmiot2 .przedmiot3",
-    ".przedmiot4 .przedmiot5 .przedmiot6";
+    grid-template-areas:
+        ".przedmiot1 .przedmiot2 .przedmiot3",
+        ".przedmiot4 .przedmiot5 .przedmiot6";
     gap: 2%;
 }
 
-.oferta a, ul a {
+.oferta a,
+ul a {
     text-decoration: none;
     color: #000;
     transition: all 0.3s ease 0s;
 }
 
-.oferta a:hover{
+.oferta a:hover {
     text-decoration: none;
     color: rgba(0, 0, 0, .7);
     transition: all 0.2s ease 0s;
@@ -265,18 +268,18 @@ a {
 /* FOOTER */
 
 
-footer{
+footer {
     width: 100%;
     height: 40px;
-    background: rgb(255,255,255); 
+    background: rgb(255, 255, 255);
     font-size: 1.25em;
     text-align: center;
     padding-top: 10px;
 }
 
-footer p span{
+footer p span {
     font-weight: 600;
-    color: rgb(102, 51, 0); 
+    color: rgb(102, 51, 0);
 }
 
 
@@ -296,7 +299,7 @@ footer p span{
 /* KONTAKT */
 
 .main_ankieta {
-    font-size: 1.2em; 
+    font-size: 1.2em;
     padding: 40px;
     display: flex;
     justify-content: center;
@@ -334,6 +337,16 @@ footer p span{
     cursor: pointer;
     border-radius: 50px;
     border: 2px solid rgb(102, 51, 0);
-    color: #fff; 
+    color: #fff;
     font-size: 1.1em;
+}
+
+form p span {
+    color: rgb(255, 0, 0);
+}
+
+.red {
+    font-size: .7em;
+    color: rgb(255, 0, 0);
+    margin-bottom: 2%;
 }

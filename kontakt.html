@@ -29,18 +29,20 @@
         <div class="main_ankieta">
             <br>
             <fieldset class="obramowanieankiety">
-                <p class="kontaktnag">Skontaktuj się z twórcą</p><br>
+                <p class="kontaktnag">Skontaktuj się z nami</p><br>
+                <p class="red">*wymagane</p>
                 <form action="mailto: polskipolak2005@gmail.com" method="post">
                     <p>Twoje Imie i Nazwisko:</p>
                     <input class="inputk" type="text" name="imie_nazwisko_uzytkownika" placeholder="Imie i Nazwisko"
                         maxlength="30" minlength="3" /> <br><br>
-                    <p>Twój adres email:</p>
+                    <p>Twój adres email:<span>*</span></p>
                     <input class="inputk" type="email" name="mail" required class="mail" placeholder="Adres Email"
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,63}$"><br><br>
-                    <p>Twoja wiadomość:</p>
+                    <p>Twoja wiadomość:<span>*</span></p>
                     <textarea class="textwysyalny" rows="15" required cols="50"
                         placeholder="Wyślij wiadomość do twórcy"></textarea> <br><br>
-                    <p><input type="checkbox" required> Zgadzam się na przetwarzanie moich danych osobowych.</p><br><br>
+                    <p><input type="checkbox" required> Zgadzam się na przetwarzanie moich danych
+                        osobowych.<span>*</span></p><br><br>
                     <input class="guzikwysylania" type="submit" name="submit" value="Wyślij" />
                 </form>
             </fieldset>
