@@ -24,14 +24,14 @@ body {
   user-select: none;
 }
 
-a {
+.link {
   text-decoration: none;
   color: #000;
 }
 
 /* NAV */
 
-nav {
+.nav {
   padding-top: 0.5%;
   padding-bottom: 0.5%;
   width: 100%;
@@ -47,34 +47,34 @@ nav {
   box-shadow: 0 1px 10px 0 black;
 }
 
-nav > a > p {
+.nav__title {
   font-size: 2.6em;
   font-weight: 900;
   padding-left: 9%;
   color: rgb(102, 51, 0);
 }
 
-nav > ul {
+.nav__linkslist {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: auto;
 }
 
-nav > ul > li {
+.linkslist__element {
   font-size: 1.2em;
   margin: auto;
   transition: 0.25s;
   font-weight: 600;
 }
 
-nav > ul > li:hover {
+.linkslist__element:hover {
   font-size: 1.201em;
   color: rgba(0, 0, 0, 0.8);
 }
 
 /* HEADER */
 
-header {
+.containter__header {
   width: 100%;
   height: 250px;
   background-color: #fff;
@@ -84,21 +84,21 @@ header {
   align-items: center;
 }
 
-header > ._h1 {
+.header__title {
   grid-column: 2/3;
 }
 
-header > ._h1 > h1 {
+.header__maintitle {
   font-size: 3.2em;
 }
 
-header > ._h1 > h1 > span {
+.header__maintitle--color {
   font-size: 1.3em;
   letter-spacing: 0.05em;
   color: rgb(102, 51, 0);
 }
 
-header > ._h1 > p {
+.header__subtitle {
   font-size: 1.3em;
 }
 
@@ -114,14 +114,14 @@ main {
   align-items: center;
 }
 
-main > h2 {
+.main__title {
   font-size: 2em;
   grid-row: 1/2;
   grid-column: 2/3;
   align-self: end;
 }
 
-main > .lat10 {
+.main__description {
   padding-top: 2%;
   padding-left: 0%;
   font-size: 1.3em;
@@ -130,7 +130,7 @@ main > .lat10 {
   align-self: start;
 }
 
-main > ul {
+.main__valueslist {
   margin-top: 2%;
   padding-top: 2%;
   padding-left: 1.5%;
@@ -140,16 +140,16 @@ main > ul {
   align-self: start;
 }
 
-main > ul > li {
+.valueslist__element {
   padding-bottom: 0.4%;
   transition: 0.25s;
 }
 
-main > ul > li:hover {
+.valueslist__element:hover {
   font-size: 1.2em;
 }
 
-main > .natura {
+.main__quote {
   margin-top: 3%;
   font-weight: 600;
   padding-top: 5%;
@@ -172,7 +172,7 @@ section {
   align-items: center;
 }
 
-section > h2 {
+.section__title {
   font-size: 2em;
   grid-row: 1/2;
   grid-column: 2/3;
@@ -181,7 +181,7 @@ section > h2 {
 
 /* OFERTA */
 
-.oferta {
+.section__offer {
   grid-row: 2/3;
   grid-column: 2/3;
   display: grid;
@@ -192,25 +192,20 @@ section > h2 {
   gap: 2%;
 }
 
-.oferta a,
+.section__offer a,
 ul a {
   text-decoration: none;
   color: #000;
   transition: all 0.3s ease 0s;
 }
 
-.oferta a:hover {
+.section__offer a:hover {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
   transition: all 0.2s ease 0s;
 }
 
-.przedmiot1,
-.przedmiot2,
-.przedmiot3,
-.przedmiot4,
-.przedmiot5,
-.przedmiot6 {
+.offer__item {
   background: #ebebeb;
   display: grid;
   grid-template-columns: 5% 90% 5%;
@@ -218,7 +213,7 @@ ul a {
   align-items: center;
 }
 
-.oferta img {
+.offer__item__image {
   width: 270px;
   height: 202.5px;
   grid-row: 1/2;
@@ -226,18 +221,9 @@ ul a {
   justify-self: center;
 }
 
-.opis {
+.offer__item__description {
   grid-row: 2/3;
   grid-column: 2/3;
-}
-
-.przedmiot1 {
-}
-
-.przedmiot2 {
-}
-
-.przedmiot3 {
 }
 
 /* FOOTER */
@@ -251,7 +237,7 @@ footer {
   padding-top: 10px;
 }
 
-footer p span {
+.footer__text--color {
   font-weight: 600;
   color: rgb(102, 51, 0);
 }
@@ -270,7 +256,7 @@ footer p span {
 
 /* KONTAKT */
 
-.main_ankieta {
+.main_contact {
   font-size: 1.2em;
   padding: 40px;
   display: flex;
@@ -278,29 +264,42 @@ footer p span {
   align-items: center;
 }
 
-.obramowanieankiety {
+.contact_fieldset {
   margin-top: 15px;
   padding: 20px;
   border: 2px dashed rgb(102, 51, 0);
+  border-radius: 5px;
 }
 
-.kontaktnag {
+.contact__title {
   font-size: 45px;
   font-weight: 600;
 }
 
-.inputk {
+.contact__form__input {
   padding: 3px;
   border: 2px solid #000;
+  border-radius: 5px;
 }
 
-.textwysyalny {
+.redstar {
+  color: rgb(255, 0, 0);
+}
+
+.contact__text--red {
+  font-size: 0.7em;
+  color: rgb(255, 0, 0);
+  margin-bottom: 2%;
+}
+
+.contact__form__textarea {
   padding: 5px;
   outline: none;
   border: 2px solid #000;
+  border-radius: 5px;
 }
 
-.guzikwysylania {
+.contact__sentbutton {
   padding-top: 1%;
   padding-bottom: 1%;
   padding-left: 4%;
@@ -311,14 +310,4 @@ footer p span {
   border: 2px solid rgb(102, 51, 0);
   color: #fff;
   font-size: 1.1em;
-}
-
-form p span {
-  color: rgb(255, 0, 0);
-}
-
-.red {
-  font-size: 0.7em;
-  color: rgb(255, 0, 0);
-  margin-bottom: 2%;
 }

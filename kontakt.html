@@ -1,57 +1,90 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>ANToni</title>
-    <meta name="keywords" content="wiktor kmiecik, zsti, html">
-    <meta name="author" content="Wiktor Kmiecik">
-    <link rel="stylesheet" href="style/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <link id="favicon" rel="icon" type="image/png" href="../zdjecia/mrowka_logo.png" />
-</head>
+    <meta name="keywords" content="wiktor kmiecik, zsti, html" />
+    <meta name="author" content="Wiktor Kmiecik" />
+    <link rel="stylesheet" href="style/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link
+      id="favicon"
+      rel="icon"
+      type="image/png"
+      href="../zdjecia/mrowka_logo.png"
+    />
+  </head>
 
-<body>
-    <nav id="_nav">
-        <a href="index.html">
-            <p>ANToni</p>
-        </a>
-        <ul class="navlinks">
-            <li><a href="index.html#onas">O Nas</a></li>
-            <li><a href="index.html#aa">Oferta</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
+  <body>
+    <nav id="_nav" class="nav">
+      <a href="index.html" class="link">
+        <p class="nav__title">ANToni</p>
+      </a>
+      <ul class="nav__linkslist">
+        <li class="linkslist__element"><a href="#onas">O Nas</a></li>
+        <li class="linkslist__element"><a href="#offer">Oferta</a></li>
+        <li class="linkslist__element">
+          <a class="cta" href="kontakt.html">Kontakt</a>
+        </li>
+      </ul>
     </nav>
+    <br />
 
-    <br>
-
-    <div class="container">
-        <div class="main_ankieta">
-            <br>
-            <fieldset class="obramowanieankiety">
-                <p class="kontaktnag">Skontaktuj się z nami</p><br>
-                <p class="red">*wymagane</p>
-                <form action="mailto: polskipolak2005@gmail.com" method="post">
-                    <p>Twoje Imie i Nazwisko:</p>
-                    <input class="inputk" type="text" name="imie_nazwisko_uzytkownika" placeholder="Imie i Nazwisko"
-                        maxlength="30" minlength="3" /> <br><br>
-                    <p>Twój adres email:<span>*</span></p>
-                    <input class="inputk" type="email" name="mail" required class="mail" placeholder="Adres Email"
-                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,63}$"><br><br>
-                    <p>Twoja wiadomość:<span>*</span></p>
-                    <textarea class="textwysyalny" rows="15" required cols="50"
-                        placeholder="Wyślij wiadomość do twórcy"></textarea> <br><br>
-                    <p><input type="checkbox" required> Zgadzam się na przetwarzanie moich danych
-                        osobowych.<span>*</span></p><br><br>
-                    <input class="guzikwysylania" type="submit" name="submit" value="Wyślij" />
-                </form>
-            </fieldset>
-        </div>
+    <div class="main_contact">
+      <br />
+      <fieldset class="contact_fieldset">
+        <h2 class="contact__title">Skontaktuj się z nami</h2>
+        <br />
+        <p class="contact__text--red">*wymagane</p>
+        <form action="mailto: polskipolak2005@gmail.com" method="post">
+          <label for="imie_nazwisko_uzytkownika" class="contact__inputlabel">Twoje Imie i Nazwisko:</label>
+          <input
+            class="contact__form__input"
+            type="text"
+            name="imie_nazwisko_uzytkownika"
+            placeholder="Imie i Nazwisko"
+            maxlength="30"
+            minlength="3"
+          />
+          <br /><br />
+          <label for="mail" class="contact__inputlabel">Twój adres email:<span class="redstar">*</span></label>
+          <input
+            class="contact__form__input"
+            type="email"
+            name="mail"
+            required
+            class="mail"
+            placeholder="Adres Email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,63}$"
+          /><br /><br />
+          <label for="wiadomosc" class="contact__inputlabel">Twoja wiadomość:<span class="redstar">*</span></label>
+          <textarea
+            class="contact__form__textarea"
+            name="wiadomosc"
+            rows="15"
+            required
+            cols="50"
+            placeholder="Wyślij wiadomość do twórcy"
+          ></textarea>
+          <br /><br />
+          <p>
+            <input type="checkbox" required /> Zgadzam się na przetwarzanie
+            moich danych osobowych.<span class="redstar">*</span>
+          </p>
+          <br /><br />
+          <input
+            class="contact__sentbutton"
+            type="submit"
+            name="submit"
+            value="Wyślij"
+          />
+        </form>
+      </fieldset>
     </div>
 
-    <br><br>
+    <br />
     <footer>
-        <p><span>&copy;</span> Hodowla Mrówek <span>ANToni</span> 2020</p>
+      <p><span>&copy;</span> Hodowla Mrówek <span>ANToni</span> 2020</p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -60,7 +93,5 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="./js/parallax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" integrity="sha512-/6TZODGjYL7M8qb7P6SflJB/nTGE79ed1RfJk3dfm/Ib6JwCT4+tOfrrseEHhxkIhwG8jCl+io6eaiWLS/UX1w==" crossorigin="anonymous"></script> -->
-
-</body>
-
+  </body>
 </html>

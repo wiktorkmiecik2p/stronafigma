@@ -16,25 +16,29 @@
   </head>
 
   <body>
-    <nav id="_nav">
-      <a href="index.html">
-        <p>ANToni</p>
+    <nav id="_nav" class="nav">
+      <a href="index.html" class="link">
+        <p class="nav__title">ANToni</p>
       </a>
-      <ul class="navlinks">
-        <li><a href="#onas">O Nas</a></li>
-        <li><a href="#aa">Oferta</a></li>
-        <li><a class="cta" href="kontakt.html">Kontakt</a></li>
+      <ul class="nav__linkslist">
+        <li class="linkslist__element"><a href="#onas">O Nas</a></li>
+        <li class="linkslist__element"><a href="#offer">Oferta</a></li>
+        <li class="linkslist__element">
+          <a class="cta" href="kontakt.html">Kontakt</a>
+        </li>
       </ul>
     </nav>
 
     <br />
 
     <div class="container">
-      <header>
-        <div class="_h1">
-          <h1>Hodowla Mrówek <span> ANToni</span></h1>
+      <header class="containter__header">
+        <div class="header__title">
+          <h1 class="header__maintitle">
+            Hodowla Mrówek <span class="header__maintitle--color"> ANToni</span>
+          </h1>
           <br />
-          <p>Największa hodowla mrówek w Polsce!</p>
+          <p class="header__subtitle">Największa hodowla mrówek w Polsce!</p>
         </div>
       </header>
 
@@ -45,10 +49,10 @@
         data-image-src="./zdjecia/mrowka1.jpg"
       ></div>
 
-      <main id="onas">
-        <h2>O Nas</h2>
+      <main id="onas" class="main">
+        <h2 class="main__title">O Nas</h2>
         <br />
-        <p class="lat10">
+        <p class="main__description">
           Od ponad 10 lat zajmujemy się hodowlą mrówek. Mrówki to nasza pasja i
           również fascynujący obiekt dla obserwacji. <br />
           Podziwiamy je, ponieważ są one jednymi z najliczniejszych stworzeń na
@@ -59,24 +63,24 @@
         </p>
         <br /><br />
 
-        <ul class="listawalorow">
-          <li>
+        <ul class="main__valueslist">
+          <li class="valueslist__element">
             <p>• Posiadamy 10-letnie doświadczenie na rynku</p>
           </li>
-          <li>
+          <li class="valueslist__element">
             <p>
               • Nasza oferta jest dostosowana do indywidualnych potrzeb klienta
             </p>
           </li>
-          <li>
+          <li class="valueslist__element">
             <p>• Oferujemy wysoką jakość w niskiej cenie</p>
           </li>
-          <li>
+          <li class="valueslist__element">
             <p>• Celem naszej firmy jest satysfakcja klienta</p>
           </li>
         </ul>
 
-        <p class="natura">
+        <p class="main__quote">
           "Chodząc po lesie, patrzymy czy przypadkiem nie rozdepczemy żywego
           stworzenia.
           <br />
@@ -91,20 +95,26 @@
         data-image-src="./zdjecia/mrowka2.jpg"
       ></div>
 
-      <section id="aa">
-        <h2>Nasza Oferta</h2>
+      <section id="offer" class="section">
+        <h2 class="section__title">Nasza Oferta</h2>
 
-        <div class="oferta">
-          <div class="przedmiot1">
-            <img src="zdjecia/oferta_mrowka1.jpg" alt="Królowa mrówek" /> <br />
-            <div class="opis">
-              <h3>Królowa mrówek</h3>
+        <div class="section__offer">
+          <div class="offer__item">
+            <img
+              src="zdjecia/oferta_mrowka1.jpg"
+              alt="Królowa mrówek"
+              class="offer__item__image"
+            />
+            <br />
+            <div class="offer__item__description">
+              <h3 class="offer__item__title">Królowa mrówek</h3>
               <br />
               <p>
                 Cena: <b>24<sup>99</sup> zł/szt</b>
               </p>
               <br /><br />
               <a
+                class="offer__item__infolink"
                 href="https://pl.wikipedia.org/wiki/Pierwomr%C3%B3wka_%C5%82agodna"
                 target="_blank"
                 >Czytaj więcej...</a
@@ -112,67 +122,81 @@
             </div>
           </div>
 
-          <div class="przedmiot2">
+          <div class="offer__item">
             <img
               src="zdjecia/oferta_mrowka2.jpg"
               alt="Mrówka Rudnica (Czerwona)"
+              class="offer__item__image"
             />
             <br />
-            <div class="opis">
-              <h3>Mrówka Rudnica (Czerwona)</h3>
+            <div class="offer__item__description">
+              <h3 class="offer__item__title">Mrówka Rudnica (Czerwona)</h3>
               <br />
               <p>
                 Cena: <b>18<sup>99</sup> zł/szt</b>
               </p>
               <br /><br />
               <a
+                class="offer__item__infolink"
                 href="https://pl.wikipedia.org/wiki/Mr%C3%B3wka_rudnica"
                 target="_blank"
                 >Czytaj więcej...</a
               >
             </div>
           </div>
-          <div class="przedmiot3">
-            <img src="zdjecia/oferta_mrowka3.jpg" alt="Mrówka Zwykła" /> <br />
-            <div class="opis">
-              <h3>Mrówka Zwykła</h3>
+          <div class="offer__item">
+            <img
+              src="zdjecia/oferta_mrowka3.jpg"
+              alt="Mrówka Zwykła"
+              class="offer__item__image"
+            />
+            <br />
+            <div class="offer__item__description">
+              <h3 class="offer__item__title">Mrówka Zwykła</h3>
               <br />
               <p>
                 Cena: <b>2<sup>99</sup> zł/5 szt</b>
               </p>
               <br /><br />
               <a
+                class="offer__item__infolink"
                 href="https://pl.wikipedia.org/wiki/Mr%C3%B3wkowate"
                 target="_blank"
                 >Czytaj więcej...</a
               >
             </div>
           </div>
-          <div class="przedmiot4">
-            <img src="zdjecia/oferta_mrowka4.jpeg" alt="Hurtnica czarna" />
+          <div class="offer__item">
+            <img
+              src="zdjecia/oferta_mrowka4.jpeg"
+              alt="Hurtnica czarna"
+              class="offer__item__image"
+            />
             <br />
-            <div class="opis">
-              <h3>Hurtnica czarna</h3>
+            <div class="offer__item__description">
+              <h3 class="offer__item__title">Hurtnica czarna</h3>
               <br />
               <p>
                 Cena: <b>13<sup>99</sup> zł/szt</b>
               </p>
               <br /><br />
               <a
+                class="offer__item__infolink"
                 href="https://pl.wikipedia.org/wiki/Hurtnica_pospolita"
                 target="_blank"
                 >Czytaj więcej...</a
               >
             </div>
           </div>
-          <div class="przedmiot5">
+          <div class="offer__item">
             <img
               src="https://anthillshop.pl/userdata/public/gfx/1c7e0ba2d537410f998a12f33523a966.jpg"
               alt="Formikarium wysokie"
+              class="offer__item__image"
             />
             <br />
-            <div class="opis">
-              <h3>Formikarium wysokie</h3>
+            <div class="offer__item__description">
+              <h3 class="offer__item__title">Formikarium wysokie</h3>
               <br />
               <p>
                 Cena: <b>119<sup>99</sup> zł/szt</b>
@@ -180,14 +204,15 @@
               <br /><br />
             </div>
           </div>
-          <div class="przedmiot6">
+          <div class="offer__item">
             <img
               src="https://a.allegroimg.com/original/11149c/387ef9ec4aa79ace627841fa093f/Miod-gryczany-mrowek-5ml-mrowki-do-formikarium"
               alt="Miód gryczany"
+              class="offer__item__image"
             />
             <br />
-            <div class="opis">
-              <h3>Miód gryczany</h3>
+            <div class="offer__item__description">
+              <h3 class="offer__item__title">Miód gryczany</h3>
               <br />
               <p>
                 Cena: <b>4<sup>99</sup> zł/szt</b>
@@ -206,7 +231,9 @@
       ></div>
 
       <footer>
-        <p><span>&copy;</span> Hodowla Mrówek <span>ANToni</span> 2020</p>
+        <p class="footer__text">
+          <span class="footer__text--color">&copy;</span> Hodowla Mrówek <span class="footer__text--color">ANToni</span> 2020
+        </p>
       </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
